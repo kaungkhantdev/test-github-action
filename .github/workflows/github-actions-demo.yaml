@@ -1,0 +1,13 @@
+name: Test CI Github Action
+
+on:
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    build: 
+        runs-on: ubuntu-latest
+    
+        steps: 
+            - run: echo "Hello world from github action"
